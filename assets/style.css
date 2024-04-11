@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x:hidden ;
+    color: #ffffff;
+    background-color: #18171F;
+}
+html{
+    scroll-behavior: smooth;
+}
+.btn-scroll {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    font-size: 32px;
+    background-color: var(--gray);
+    border-radius: 50px;
+    z-index: 998;
+}
+.header-container{
+    width:80%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #24232C;
+    display: flex;
+
+}
+.left-header{
+    display: flex;
+}
+h1{
+    font-weight: 800;
+    font-size: 22px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+li{
+    margin-left: 30px;
+}
+.searchbar {
+    background: none;
+    color: white;
+    width: 160px;
+    border: none;
+    transition: 0.3s;
+    outline: none;
+}
+.barre-de-recherche{
+    border: 1px solid;
+    padding: 5px;
+}
+
+.acceuil {
+    background-image: url(../assets/images/background.jpeg);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+    background-attachment: fixed;
+    background-position: center;
+}
+.acceuil-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    flex-direction: column;
+    transform: rotate(180deg);
+    max-width: 1500px;
+    
+}
+h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.acceuil-container p{
+    font-size: 12px;
+    max-width: 1500px;
+}
+.btn-acceuil{
+    width: 200px;
+    height: 35px;
+    background-color: #C96634;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    border: 1px solid #C96634;
+    transition: all .5s;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.btn-acceuil:hover{
+    background:none;
+
+}
+
+.tracker-container{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+}
+.starfinder{
+    width: 400px;
+    height: 560px;
+    background-color: #24232C;
+    position: relative;
+}
+.img-container{
+    overflow: hidden;
+}
+.starfinder img{
+    width: 100%;
+    height: 280px;
+    transition: all .5s;
+}
+.starfinder img:hover{
+    scale: 1.2;
+}
+.starfinder-container{
+    margin: 0 auto;
+    width: 80%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1400px;
+}
+h3{
+    position: absolute;
+    top: 140px;
+    font-size: 22px;
+}
+.btn-esp{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 12px;
+    text-transform: capitalize;
+    border: 1px solid #C96634;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #C96634;
+    margin-top: 20px;
+}
+.btn-esp:hover{
+    background:none;
+
+}
+.satelite-tracker{
+    width: 950px;
+    height: 250px;
+    background-image: url(../assets/images/satelittes.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.phenomene{
+    width: 950px;
+    height: 250px;
+    background-image: url(../assets/images/phenomene.jpg);
+    background-position: center;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+}
+h4{
+    font-size: 22px;
+}
+.photo-jour h4{
+    text-align: center;
+    margin-top: 100px;
+}
+.photo-du-jour-container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1500px;
+
+}
+.photo-jour img{
+    width: 100%;
+    margin-top: 100px;
+    height: 700px;
+    object-fit: cover;
+}
+.actu{
+    margin-top: 100px;
+}
+.actu-container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.actu-container h2{
+    font-size: 30px;
+}
+.actu-container p{
+    margin-top: 20px;
+}
+.actu-container img{
+    width: 450px;
+}

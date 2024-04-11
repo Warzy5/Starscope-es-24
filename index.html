@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkyScope">
+    <title>SkyScope</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="acceuil">
+        <div class="header-container">
+            <div class="left-header">
+                <h1>SkyScope</h1>
+                <nav>
+                    <ul>
+                        <li>Acceuil</li>
+                        <li>Etoiles</li>
+                        <li>Satelittes</li>
+                        <li>Phénomènes</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="searchbarre">
+                <form action="animes.php" method="GET" class="barre-de-recherche">
+                    <input name="query" id="searchBar" class="searchbar" type="text" placeholder="Rechercher">
+                    <a id="btnSearch" class="btn-search"><i class="ri-search-line"></i></a>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="acceuil">
+            <div class="acceuil-container">
+                <h2>Trouvez votre étoile <br> en un clic</h2>
+                <p>SkyScope, la platforme de recherche d’étoiles et de sattélites en ligne<br>
+                    Tennez vous au courrant des dernières découvertes.</p>
+                <a class="btn-acceuil" href="#scroll">en savoir plus <i class="ri-arrow-down-line"></i></a>
+            </div>
+        </div>
+
+        <a data-aos="fade-up" class="btn-scroll" href="#acceuil"> <!--scroll to top btn-->
+            <div class="icone"><i class="ri-arrow-up-s-line"></i></a>
+        </div>
+
+        <div class="tracker-container" id="scroll">
+
+            <div class="left-tracker">
+                <div class="starfinder">
+                    <div class="img-container">
+                        <img src="./assets/images/etoiles.jpg">
+                    </div>
+                    <div class="starfinder-container">
+                        <h3>StarFinder</h3>
+                        <p>Rechercher votre étoiles <br>parmis plus de 150 000, </p>
+                        <a class="btn-esp">en savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-tracker">
+                <div class="satelite-tracker">
+                    <h4>Satellite Tracker</h4>
+                    <p>recherchez parmis des milliers de satélites, les photos, vidéos <br>et informations que vfous
+                        houaitez</p>
+
+                </div>
+
+                <div class="phenomene">
+                    <h4>Phénomènes</h4>
+                    <p>recherchez parmis des milliers de satélites, les photos, vidéos <br> et informations que vfous
+                        houaitez</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="photo-jour">
+            <div class="photo-du-jour-container">
+                <h4>Photo du jour</h4>
+
+                <img src="./assets/images/image-du-jour.jpg">
+            </div>
+        </div>
+
+        <div class="actu">
+            <div class="actu-container">
+                <div class="actu-left">
+                    <h2>À travers les yeux de la<br> NASA</h2>
+                    <p>Rejoignez la NASA alors qu'une éclipse solaire totale se déplacera à travers<br>l'Amérique du Nord le lundi 8 avril, traversant le Mexique, les États-Unis,<br> du Texas au Maine, et traversant la côte atlantique du Canada. Connectez<br>-vous à l'émission officielle de la NASA à 13 heures. EDT (1700 UTC) pour des<br> vues en direct depuis le chemin de l'éclipse, des<br> commentaires d'experts et des démonstrations en direct.</p>
+                </div>
+
+                <div class="actu-right">
+                    <img src="./assets/images/eclipse.jpg">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+
+</html>
